@@ -1,0 +1,188 @@
+/* General Styling & Fonts */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light background */
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    color: #0077b6; /* Professional Blue */
+}
+
+a {
+    color: #0096c7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #004d99; /* Darker Blue */
+    padding: 15px 40px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: #ffc300; /* Yellow highlight */
+}
+
+/* Main Layout (Two Columns) */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    /* Grid layout for two columns: 70% content, 30% sidebar */
+    grid-template-columns: 3fr 1fr; 
+    gap: 30px;
+}
+
+/* Blog Post Styling */
+#blog-feed {
+    padding-right: 20px;
+}
+
+.blog-post {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.blog-post img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Sidebar Styling */
+#sidebar .widget {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #eee;
+}
+
+.tag-cloud a {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 5px 5px 5px 0;
+    font-size: 0.9em;
+    color: #495057;
+}
+
+/* Commenting System Styling */
+.comments-section {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.comment {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid #0096c7;
+    border-radius: 4px;
+}
+
+.comment-time {
+    display: block;
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 5px;
+}
+
+.comment-form input, .comment-form textarea, .comment-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.comment-form button {
+    background-color: #0096c7;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #0077b6;
+}
+
+.comment-feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #28a745; /* Green for success */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
